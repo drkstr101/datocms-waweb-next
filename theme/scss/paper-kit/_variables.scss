@@ -1,0 +1,404 @@
+/** @format */
+@font-face {
+  font-family: "Adobe Clean Serif";
+  src: url("~theme/fonts/subset-AdobeCleanSerif-BoldIt.eot");
+  src: local("Adobe Clean Serif Bold Italic"), local("AdobeCleanSerif-BoldIt"),
+    url("~theme/fonts/subset-AdobeCleanSerif-BoldIt.eot?#iefix")
+      format("embedded-opentype"),
+    url("~theme/fonts/subset-AdobeCleanSerif-BoldIt.woff2") format("woff2"),
+    url("~theme/fonts/subset-AdobeCleanSerif-BoldIt.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Clean";
+  src: url("~theme/fonts/subset-AdobeClean-Light.eot");
+  src: local("Adobe Clean Light"), local("AdobeClean-Light"),
+    url("~theme/fonts/subset-AdobeClean-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("~theme/fonts/subset-AdobeClean-Light.woff2") format("woff2"),
+    url("~theme/fonts/subset-AdobeClean-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Clean Serif";
+  src: url("~theme/fonts/subset-AdobeCleanSerif-Bold.eot");
+  src: local("Adobe Clean Serif Bold"), local("AdobeCleanSerif-Bold"),
+    url("~theme/fonts/subset-AdobeCleanSerif-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("~theme/fonts/subset-AdobeCleanSerif-Bold.woff2") format("woff2"),
+    url("~theme/fonts/subset-AdobeCleanSerif-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Clean";
+  src: url("~theme/fonts/subset-AdobeClean-LightIt.eot");
+  src: local("Adobe Clean Light Italic"), local("AdobeClean-LightIt"),
+    url("~theme/fonts/subset-AdobeClean-LightIt.eot?#iefix")
+      format("embedded-opentype"),
+    url("~theme/fonts/subset-AdobeClean-LightIt.woff2") format("woff2"),
+    url("~theme/fonts/subset-AdobeClean-LightIt.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Clean Serif";
+  src: url("~theme/fonts/subset-AdobeCleanSerif-It.eot");
+  src: local("Adobe Clean Serif Italic"), local("AdobeCleanSerif-It"),
+    url("~theme/fonts/subset-AdobeCleanSerif-It.eot?#iefix")
+      format("embedded-opentype"),
+    url("~theme/fonts/subset-AdobeCleanSerif-It.woff2") format("woff2"),
+    url("~theme/fonts/subset-AdobeCleanSerif-It.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Clean";
+  src: url("~theme/fonts/subset-AdobeClean-Black.eot");
+  src: local("Adobe Clean Black"), local("AdobeClean-Black"),
+    url("~theme/fonts/subset-AdobeClean-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("~theme/fonts/subset-AdobeClean-Black.woff2") format("woff2"),
+    url("~theme/fonts/subset-AdobeClean-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Clean Serif";
+  src: url("~theme/fonts/subset-AdobeCleanSerif-Regular.eot");
+  src: local("Adobe Clean Serif"), local("AdobeCleanSerif-Regular"),
+    url("~theme/fonts/subset-AdobeCleanSerif-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("~theme/fonts/subset-AdobeCleanSerif-Regular.woff2") format("woff2"),
+    url("~theme/fonts/subset-AdobeCleanSerif-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+$font-color: #092947 !default;
+$fill-font-color: rgba(255, 255, 255, 0.8);
+$font-family-sans-serif: "Adobe Clean", "Montserrat", "Helvetica", Arial,
+  sans-serif;
+$font-family-serif: "Adobe Clean Serif", Georgia, "Times New Roman", Times,
+  serif;
+
+$none: 0 !default;
+$border-thin: 1px !default;
+$border-thick: 2px !default;
+
+$white-color: #ffffff !default;
+$white-bg: #ffffff !default;
+$white-states-color: rgba($white-color, 0.8);
+
+$smoke-bg: #e2f6fd !default;
+$pale-bg: #b7e7fa !default;
+$medium-pale-bg: #89d7f6 !default;
+
+$table-line-color: #ccc !default;
+$muted-color: #353e47 !default;
+
+$black-bg: #09294797 !default;
+
+$black-color: #111111 !default;
+$black-hr: #333333 !default;
+
+$light-gray: #e2f6fd !default;
+$medium-gray: #496c8f !default;
+$dark-gray: #333333 !default;
+
+$placeholder-gray: rgba(210, 210, 210, 1) !default;
+
+$gray-input-bg: #fffcf5 !default;
+$danger-input-bg: #ee7400 !default;
+$success-input-bg: #abf3cb !default;
+$other-medium-gray: #21547f !default;
+$transparent-bg: transparent !default;
+
+$default-color: #09294797 !default;
+$default-bg: #09294797 !default;
+$default-states-color: #403d39 !default;
+
+$primary-color: #092947 !default;
+$primary-states-color: darken($primary-color, 10%) !default;
+
+$success-color: #19857b !default;
+$success-states-color: darken($success-color, 10%) !default;
+
+$info-color: #215c94 !default;
+$info-states-color: darken($info-color, 10%) !default;
+
+$warning-color: #f2b705 !default;
+$warning-states-color: darken($warning-color, 10%) !default;
+
+$danger-color: #94352f !default;
+$danger-states-color: darken($danger-color, 8%) !default;
+
+$link-disabled-color: #666666 !default;
+
+$purple-color: #161f5d !default;
+$purple-states-color: darken($purple-color, 8%) !default;
+
+$brown-color: #dcb285 !default;
+$brown-states-color: darken($brown-color, 8%) !default;
+
+/*      light colors - used for select dropdown         */
+
+$light-blue: rgba($primary-color, 0.2);
+$light-azure: rgba($info-color, 0.2);
+$light-green: rgba($success-color, 0.2);
+$light-orange: rgba($warning-color, 0.2);
+$light-red: rgba($danger-color, 0.2);
+
+//== Components
+//
+$padding-base-vertical: 7px !default;
+$padding-base-horizontal: 18px !default;
+
+$padding-round-vertical: 9px !default;
+$padding-round-horizontal: 18px !default;
+
+$padding-simple-vertical: 10px !default;
+$padding-simple-horizontal: 18px !default;
+
+$padding-large-vertical: 11px !default;
+$padding-large-horizontal: 30px !default;
+
+$padding-small-vertical: 4px !default;
+$padding-small-horizontal: 10px !default;
+
+$padding-xs-vertical: 2px !default;
+$padding-xs-horizontal: 5px !default;
+
+$padding-label-vertical: 2px !default;
+$padding-label-horizontal: 12px !default;
+
+// padding for links inside dropdown menu
+$padding-dropdown-vertical: 10px !default;
+$padding-dropdown-horizontal: 15px !default;
+
+$margin-large-vertical: 30px !default;
+$margin-base-vertical: 15px !default;
+
+// border radius for buttons
+$border-radius-none: 0px !default;
+$border-radius-btn-small: 26px !default;
+$border-radius-btn-base: 20px !default;
+$border-radius-btn-large: 50px !default;
+
+$margin-bottom: 0 0 10px 0 !default;
+$border-radius-small: 3px !default;
+$border-radius-base: 4px !default;
+$border-radius-large: 6px !default;
+$border-radius-x-large: 8px !default;
+$border-radius-extreme: 12px !default;
+
+$border-radius-none-top: $border-radius-none $border-radius-none 0 0 !default;
+$border-radius-none-bottom: 0 0 $border-radius-none $border-radius-none !default;
+
+$border-radius-small-top: $border-radius-small $border-radius-small 0 0 !default;
+$border-radius-small-bottom: 0 0 $border-radius-small $border-radius-small !default;
+
+$border-radius-large-top: $border-radius-large $border-radius-large 0 0 !default;
+$border-radius-large-bottom: 0 0 $border-radius-large $border-radius-large !default;
+
+$btn-round-radius: 30px !default;
+
+$height-base: 40px !default;
+
+$font-size-base: 14px !default;
+$font-size-small: 12px !default;
+$font-size-medium: 16px !default;
+$font-size-large: 20px !default;
+$font-size-large-navbar: 22px !default;
+
+$font-size-h1: 3.6em !default;
+$font-size-h2: 2.8em !default;
+$font-size-h3: 1.825em !default;
+$font-size-h4: 1.6em !default;
+$font-size-h5: 1.35em !default;
+$font-size-h6: 0.9em !default;
+$font-paragraph: 15px !default;
+$font-size-navbar: 14px !default;
+
+$font-size-info-horizontal: 2.5em !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-semi: 500 !default;
+$font-weight-bold: 600 !default;
+
+$line-height-small: 20px !default;
+$line-height-general: 1.5em !default;
+$line-height: 36px !default;
+$line-height-lg: 54px !default;
+
+$border-radius-top: 10px 10px 0 0 !default;
+$border-radius-bottom: 0 0 10px 10px !default;
+$border-radius-dropdown: 10px 10px !default;
+
+$dropdown-shadow: 0 2px rgba(17, 16, 15, 0.1), 0 2px 10px rgba(17, 16, 15, 0.1);
+
+$general-transition-time: 300ms !default;
+
+$slow-transition-time: 300ms !default;
+$dropdown-coordinates: 29px -50px !default;
+
+$fast-transition-time: 150ms !default;
+$select-coordinates: 50% -40px !default;
+
+$transition-linear: linear !default;
+$transition-bezier: cubic-bezier(0.34, 1.61, 0.7, 1) !default;
+$transition-ease: ease 0s;
+
+$navbar-padding-a: 10px 15px;
+$navbar-margin-a: 15px 3px;
+
+$padding-social-a: 10px 5px;
+
+$navbar-margin-a-btn: 15px 3px;
+$navbar-margin-a-btn-round: 16px 3px;
+
+$navbar-padding-a-icons: 6px 15px;
+$navbar-margin-a-icons: 6px 3px;
+
+$navbar-padding-brand: 20px 15px;
+$navbar-margin-brand: 5px 0px;
+
+$navbar-margin-brand-icons: 12px auto;
+
+$navbar-margin-btn: 15px 3px;
+
+$height-icon: 64px !default;
+$width-icon: 64px !default;
+$padding-icon: 12px !default;
+$border-radius-icon: 15px !default;
+
+$size-icon: 64px;
+$size-icon-sm: 32px;
+
+$height-icon-sm: 32px;
+$width-icon-sm: 32px;
+$padding-icon-sm: 4px;
+$border-radius-icon-sm: 7px;
+
+$height-icon-message: 40px;
+$width-icon-message: 40px;
+
+$height-icon-message-sm: 20px;
+$width-icon-message-sm: 20px;
+
+$white-navbar: rgba(#ffffff, 0.96);
+$blue-navbar: rgba(#34acdc, 0.98);
+$azure-navbar: rgba(#5bcaff, 0.98);
+$green-navbar: rgba(#4cd964, 0.98);
+$orange-navbar: rgba(#ff9500, 0.98);
+$red-navbar: rgba(#ff4c40, 0.98);
+
+$bg-nude: #e5e6ee !default;
+$bg-primary: lighten($primary-color, 7%) !default;
+$bg-info: lighten($info-color, 7%) !default;
+$bg-success: lighten($success-color, 7%) !default;
+$bg-warning: lighten($warning-color, 7%) !default;
+$bg-danger: lighten($danger-color, 7%) !default;
+$bg-brown: lighten($brown-color, 7%) !default;
+$bg-purple: lighten($purple-color, 7%) !default;
+
+$preloader-color: #6a85a1 !default;
+
+$filter-blue: darken($primary-color, 10%);
+$filter-azure: darken($info-color, 10%);
+$filter-green: darken($success-color, 10%);
+$filter-orange: darken($warning-color, 10%);
+$filter-red: darken($danger-color, 10%);
+
+$topbar-x: topbar-x !default;
+$topbar-back: topbar-back !default;
+$bottombar-x: bottombar-x !default;
+$bottombar-back: bottombar-back !default;
+
+$social-facebook: #3b5998;
+$social-twitter: #55acee;
+$social-pinterest: #cc2127;
+$social-google: #dd4b39;
+$social-linkedin: #0976b4;
+$social-dribbble: #ea4c89;
+$social-github: #333333;
+$social-youtube: #e52d27;
+$social-instagram: #125688;
+$social-reddit: #ff4500;
+$social-tumblr: #35465c;
+
+$background-light-grey: #93a7bc !default;
+$background-lighter-grey: #bdcad7 !default;
+$font-background-light-grey: #6a85a1 !default;
+$font-hover-background-light-grey: #496c8f !default;
+
+// variables used in headers
+$header-background: #222222 !default;
+
+$filter-primary: darken($primary-color, 10%);
+$filter-info: darken($info-color, 10%);
+$filter-success: darken($success-color, 10%);
+$filter-warning: darken($warning-color, 10%);
+$filter-danger: darken($danger-color, 10%);
+
+// variable used in footers
+$black-footer-bg: #252422 !default;
+$brown-font-color: #a49e9e !default;
+$brown-font-color-hover: #f1eae0 !default;
+
+//variables used in cards
+$card-black-color: #111111 !default;
+$card-muted-color: #ccc !default;
+
+$card-background-blue: #6a85a1 !default;
+$card-font-blue: #092947 !default;
+$card-subtitle-blue: #215c94 !default;
+
+$card-background-green: #b3dedb !default;
+$card-font-green: #11493f !default;
+$card-subtitle-green: #16756a !default;
+
+$card-background-yellow: #fefce5 !default;
+$card-font-yellow: #ee7400 !default;
+$card-subtitle-yellow: #f2b705 !default;
+
+$card-background-brown: #d6c1ab !default;
+$card-font-brown: #75442e !default;
+$card-subtitle-brown: #a47e65 !default;
+
+$card-background-purple: #baa9ba !default;
+$card-font-purple: #3a283d !default;
+$card-subtitle-purple: #5a283d !default;
+
+$card-background-orange: #ff8f5e !default;
+$card-font-orange: #772510 !default;
+$card-subtitle-orange: #e95e37 !default;
+
+$card-background-primary: #445d74 !default;
+$card-border-color: #092947 !default;
+
+$color-red-error: rgb(185, 74, 72) !default;
+$color-grey-arrow: rgba(204, 204, 204, 0.2) !default;
+
+$width-default: 220px !default; // 3 960px-grid columns
+
+$zindex-select-dropdown: 1060 !default; // must be higher than a modal background (1050)
+
+//** Placeholder text color
+$input-color-placeholder: #354a5e !default;

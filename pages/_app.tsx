@@ -17,12 +17,13 @@
  */
 
 import { SSRProvider, OverlayProvider } from "react-aria"
-import "@styles/nprogress.css"
-import "@styles/chrome-bug.css"
-import "@styles/index.css"
+import "@theme/scss/main.scss"
+import "@theme/nprogress.css"
+import "@theme/chrome-bug.css"
+import "@theme/index.css"
 import type { AppProps } from "next/app"
-import NProgress from "../components/nprogress"
-import ResizeHandler from "../components/resize-handler"
+import NProgress from "@components/nprogress"
+import ResizeHandler from "@components/resize-handler"
 import { useEffect } from "react"
 
 export default function App({ Component, pageProps }: AppProps) {

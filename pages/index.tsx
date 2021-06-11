@@ -6,7 +6,7 @@ import Container from "../components/container"
 import HeroPost from "../components/hero-post"
 import Intro from "../components/intro"
 import Layout from "../components/layout"
-import MoreStories from "../components/more-stories"
+import CaseStudies from "../components/case-studies"
 import { request } from "../lib/datocms"
 import { homepage } from "@lib/queries"
 
@@ -59,7 +59,7 @@ export default function Index({ subscription }) {
               excerpt={heroPost.excerpt}
             />
           )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          {morePosts.length > 0 && <CaseStudies posts={morePosts} />}
         </Container>
       </Layout>
     </>
