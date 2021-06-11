@@ -8,13 +8,14 @@ import { Button } from "reactstrap"
 // core components
 
 function BlogPostHeader() {
-  let pageHeader = React.createRef()
+  let pageHeader = React.createRef<any>()
 
   React.useEffect(() => {
     if (window.innerWidth > 991) {
       const updateScroll = () => {
         let windowScrollTop = window.pageYOffset / 3
-        pageHeader.current.style.transform = "translate3d(0," + windowScrollTop + "px,0)"
+        pageHeader.current.style.transform =
+          "translate3d(0," + windowScrollTop + "px,0)"
       }
       window.addEventListener("scroll", updateScroll)
       return function cleanup() {
@@ -29,7 +30,10 @@ function BlogPostHeader() {
         className="page-header"
         ref={pageHeader}
         style={{
-          backgroundImage: "url(" + require("assets/img/sections/uriel-soberanes.jpg").default + ")",
+          backgroundImage:
+            "url(" +
+            require("assets/img/sections/uriel-soberanes.jpg").default +
+            ")",
         }}
       >
         <div className="filter" />
@@ -38,7 +42,13 @@ function BlogPostHeader() {
             <h1 className="title-uppercase text-center">Paper Kit</h1>
             <h3 className="text-center">Make your mark with a new design.</h3>
             <br />
-            <Button className="btn-round" color="warning" href="#wa" onClick={(e) => e.preventDefault()} size="lg">
+            <Button
+              className="btn-round"
+              color="warning"
+              href="#wa"
+              onClick={(e) => e.preventDefault()}
+              size="lg"
+            >
               <i className="fa fa-share-alt mr-1 " />
               Share Article
             </Button>

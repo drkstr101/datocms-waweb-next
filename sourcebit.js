@@ -1,5 +1,5 @@
 const _ = require("lodash")
-const isDev = process.env.NODE_ENV === "development"
+const isDev = process.env.NODE_ENV !== "production"
 
 module.exports = {
   plugins: [
@@ -39,19 +39,19 @@ module.exports = {
           },
           {
             path: "/{__metadata.urlPath}",
-            predicate: _.matchesProperty("__metadata.modelName", "blog"),
-          },
-          {
-            path: "/{__metadata.urlPath}",
-            predicate: _.matchesProperty("__metadata.modelName", "portfolio"),
-          },
-          {
-            path: "/{__metadata.urlPath}",
             predicate: _.matchesProperty("__metadata.modelName", "page"),
           },
           {
             path: "/{__metadata.urlPath}",
+            predicate: _.matchesProperty("__metadata.modelName", "blog"),
+          },
+          {
+            path: "/__metadata.urlPath}",
             predicate: _.matchesProperty("__metadata.modelName", "post"),
+          },
+          {
+            path: "/{__metadata.urlPath}",
+            predicate: _.matchesProperty("__metadata.modelName", "portfolio"),
           },
           {
             path: "/{__metadata.urlPath}",

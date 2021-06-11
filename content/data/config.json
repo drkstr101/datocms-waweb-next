@@ -4,23 +4,18 @@
   "accent_color": "yellow",
   "base_font": "fraunces",
   "header": {
-    "logo": "/images/mstile-150x150.png",
+    "logo": "https://cdn.watheia.org/assets/logo-lightmdpi.png",
     "logo_alt": "Watheia Labs",
     "has_nav": true,
     "nav_links": [
       {
         "label": "Home",
-        "url": "/",
+        "url": "/home/",
         "style": "link"
       },
       {
-        "label": "About",
-        "url": "/about/",
-        "style": "link"
-      },
-      {
-        "label": "Materials",
-        "url": "/demo/",
+        "label": "Support",
+        "url": "/support/",
         "style": "link"
       },
       {
@@ -34,7 +29,7 @@
         "style": "button"
       }
     ],
-    "title": "STATERAE VINCIT"
+    "title": "Micro Frontends by Watheia Labs"
   },
   "footer": {
     "content": "&copy; Watheia Labs, LLC. All rights reserved. ",

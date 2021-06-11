@@ -4,7 +4,7 @@ import React from "react"
 
 // core components
 
-function ProductPageHeader() {
+function DemoPageHeader() {
   document.documentElement.classList.remove("nav-open")
   React.useEffect(() => {
     document.body.classList.add("product-page")
@@ -17,7 +17,10 @@ function ProductPageHeader() {
       <div
         className="page-header page-header-xs"
         style={{
-          backgroundImage: "url(" + require("assets/img/sections/clark-street-mercantile.jpg").default + ")",
+          backgroundImage:
+            "url(" +
+            require("assets/img/sections/clark-street-mercantile.jpg").default +
+            ")",
         }}
       >
         <div className="filter" />
@@ -26,4 +29,4 @@ function ProductPageHeader() {
   )
 }
 
-export default ProductPageHeader
+export default DemoPageHeader
