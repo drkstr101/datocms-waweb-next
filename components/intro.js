@@ -8,13 +8,14 @@ export default function Intro() {
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
         We build micro frontends!
+        <br />
+        <a
+          href="https://watheia.app/home"
+          className="underline hover:text-success duration-200 transition-colors"
+        >
+          Find out how.
+        </a>
       </h4>
-      <a
-        href="https://watheia.app/home"
-        className="underline hover:text-success duration-200 transition-colors"
-      >
-        Find out how.
-      </a>
     </section>
   )
 }
