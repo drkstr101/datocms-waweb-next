@@ -1,5 +1,236 @@
-/* purgecss start ignore */
+/**
+ * /* purgecss start ignore
+ *
+ * @format
+ */
+
 @tailwind base;
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+/**
+ * Copyright 2021 Watheia Labs, LLC.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@font-face {
+  font-family: "Adobe Clean Serif";
+  src: url("fonts/subset-AdobeCleanSerif-Black.woff2") format("woff2"),
+    url("fonts/subset-AdobeCleanSerif-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Clean Serif";
+  src: url("fonts/subset-AdobeCleanSerif-BlackIt.woff2") format("woff2"),
+    url("fonts/subset-AdobeCleanSerif-BlackIt.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Clean Serif";
+  src: url("fonts/subset-AdobeCleanSerif-Bold.woff2") format("woff2"),
+    url("fonts/subset-AdobeCleanSerif-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Clean Serif";
+  src: url("fonts/subset-AdobeCleanSerif-It.woff2") format("woff2"),
+    url("fonts/subset-AdobeCleanSerif-It.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Clean Serif";
+  src: url("fonts/subset-AdobeCleanSerif-Medium.woff2") format("woff2"),
+    url("fonts/subset-AdobeCleanSerif-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Clean Serif";
+  src: url("fonts/subset-AdobeCleanSerif-BoldIt.woff2") format("woff2"),
+    url("fonts/subset-AdobeCleanSerif-BoldIt.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Clean Serif";
+  src: url("fonts/subset-AdobeCleanSerif-MediumIt.woff2") format("woff2"),
+    url("fonts/subset-AdobeCleanSerif-MediumIt.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Clean Serif";
+  src: url("fonts/subset-AdobeCleanSerif-Regular.woff2") format("woff2"),
+    url("fonts/subset-AdobeCleanSerif-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --space: 4px;
+  --space-2x: 8px;
+  --space-3x: 12px;
+  --space-4x: 16px;
+  --space-6x: 24px;
+  --space-8x: 32px;
+  --space-12x: 48px;
+  --space-16x: 64px;
+  --space-32x: 128px;
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 24px;
+
+  --accents-1: #fafafa;
+  --accents-2: #eaeaea;
+  --accents-3: #999999;
+  --accents-4: #888888;
+  --accents-5: #666666;
+  --accents-6: #444444;
+  --accents-7: #333333;
+  --accents-8: #111111;
+
+  --gray: #252729;
+  --secondary-color: #f2b705;
+  --sidebar: #0e0e10;
+  --header-height: 72px;
+  --brand: #215c94;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  font-feature-settings: "case" 1, "rlig" 1, "calt" 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 1.65;
+  font-family: "Adobe Clean Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto Slab", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", serif;
+  font-size: var(--text-md);
+  font-weight: 400;
+  min-width: 320px;
+  direction: ltr;
+  font-feature-settings: "kern";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  color: #fff;
+  background-color: #111;
+}
+::selection {
+  background-color: #0070f3;
+  color: #fff;
+}
+[role="grid"]:focus {
+  outline: none;
+}
+svg {
+  text-rendering: optimizeLegibility;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+  color: var(--secondary-color);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+a[role="button"] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+svg {
+  shape-rendering: crispEdges;
+}
+
+svg path,
+svg circle {
+  shape-rendering: geometricprecision;
+}
+[data-reach-skip-link] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+}
+[data-reach-skip-link]:focus {
+  padding: 1rem;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: #fff;
+  z-index: 1;
+  width: auto;
+  height: auto;
+  clip: auto;
+}

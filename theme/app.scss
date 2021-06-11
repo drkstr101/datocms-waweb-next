@@ -1,0 +1,26 @@
+.app {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.app--content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px;
+}
+
+@media (min-width: 650px) {
+  .app {
+    background-position: center top;
+  }
+
+  .app--content {
+    align-items: flex-end;
+    justify-content: center;
+  }
+}

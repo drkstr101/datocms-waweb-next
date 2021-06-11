@@ -1,0 +1,87 @@
+{
+  "path_prefix": "/",
+  "color_scheme": "dark",
+  "accent_color": "yellow",
+  "base_font": "fraunces",
+  "header": {
+    "logo": "/images/mstile-150x150.png",
+    "logo_alt": "Watheia Labs",
+    "has_nav": true,
+    "nav_links": [
+      {
+        "label": "Home",
+        "url": "/",
+        "style": "link"
+      },
+      {
+        "label": "About",
+        "url": "/about/",
+        "style": "link"
+      },
+      {
+        "label": "Materials",
+        "url": "/demo/",
+        "style": "link"
+      },
+      {
+        "url": "/blog/",
+        "style": "link",
+        "label": "Blog"
+      },
+      {
+        "label": "Get Support",
+        "url": "/contact/",
+        "style": "button"
+      }
+    ],
+    "title": "STATERAE VINCIT"
+  },
+  "footer": {
+    "content": "&copy; Watheia Labs, LLC. All rights reserved. ",
+    "has_social": false,
+    "social_links": [
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/",
+        "style": "icon",
+        "icon": "twitter",
+        "new_window": true
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/",
+        "style": "icon",
+        "icon": "instagram",
+        "new_window": true
+      },
+      {
+        "label": "Dribbble",
+        "url": "https://dribbble.com/",
+        "style": "icon",
+        "icon": "dribbble",
+        "new_window": true
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/",
+        "style": "icon",
+        "icon": "linkedin",
+        "new_window": true
+      }
+    ],
+    "links": [
+      {
+        "label": "Legal",
+        "url": "https://cdn.watheia.org/assets/terms-and-conditions.txt",
+        "style": "link",
+        "icon": "dribbble",
+        "new_window": true,
+        "no_follow": false,
+        "type": "action"
+      }
+    ]
+  },
+  "domain": "https://waweb.vercel.app/",
+  "title": "Micro Frontends by Watheia Labs",
+  "favicon": "/images/icon.png"
+}
