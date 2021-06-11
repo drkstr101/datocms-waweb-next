@@ -1,7 +1,7 @@
 ---
 title: Nature Magazine
 subtitle: Editorial Design
-date: '2021-01-10'
+date: "2021-01-10"
 thumb_image: images/work-magazine-1-thumb.jpg
 thumb_image_alt: Nature Magazine preview
 sections:
@@ -48,26 +48,26 @@ seo:
   title: Nature Magazine
   description: This is the sample project description
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: website
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Nature Magazine
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: This is the sample project description
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/work-magazine-1.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Nature Magazine
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: This is the sample project description
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/work-magazine-1.jpg
       relativeUrl: true
 layout: project

@@ -2,11 +2,11 @@
 $fonts: (
   fraunces: (
     "Fraunces",
-    serif
+    serif,
   ),
   karla: (
     "Karla",
-    sans-serif
+    sans-serif,
   ),
   system-sans: (
     -apple-system,
@@ -17,8 +17,8 @@ $fonts: (
     Ubuntu,
     Cantarell,
     "Helvetica Neue",
-    sans-serif
-  )
+    sans-serif,
+  ),
 );
 
 // Colors
@@ -40,7 +40,7 @@ $accent-colors: (
   green: #19857b,
   red: #94352f,
   violet: #7c43a8,
-  yellow: #f2b705
+  yellow: #f2b705,
 );
 
 // Container max width

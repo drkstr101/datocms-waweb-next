@@ -1,13 +1,16 @@
 /** @format */
 
-require("dotenv").config()
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+})
 
-module.exports = {
+const nextConfig = {
   future: {
     webpack5: true,
   },
   env: {
-    NEXT_EXAMPLE_CMS_DATOCMS_API_TOKEN: process.env.NEXT_EXAMPLE_CMS_DATOCMS_API_TOKEN,
+    NEXT_EXAMPLE_CMS_DATOCMS_API_TOKEN:
+      process.env.NEXT_EXAMPLE_CMS_DATOCMS_API_TOKEN,
   },
   images: {
     domains: [
@@ -21,3 +24,7 @@ module.exports = {
     imageSizes: [24, 64, 300],
   },
 }
+
+module.exports = withBundleAnalyzer(nextConfig) /** @format */
+
+require("dotenv").config()

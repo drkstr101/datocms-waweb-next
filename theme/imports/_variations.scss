@@ -108,7 +108,11 @@
 
     .button--primary,
     .project-card__button {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, map-get($accent-colors, $accent) 50%);
+      background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 50%,
+        map-get($accent-colors, $accent) 50%
+      );
       border-color: map-get($accent-colors, $accent);
     }
 

@@ -1,15 +1,16 @@
-import tiny from 'tiny-json-http';
+/** @format */
 
-export async function request({ query, variables, preview }) {
+import tiny from "tiny-json-http"
 
-  let endpoint = 'https://graphql.datocms.com';
+export async function request({ query, variables = {}, preview = false }) {
+  let endpoint = "https://graphql.datocms.com"
 
   if (process.env.NEXT_DATOCMS_ENVIRONMENT) {
-    endpoint += `/environments/${process.env.NEXT_DATOCMS_ENVIRONMENT}`;
+    endpoint += `/environments/${process.env.NEXT_DATOCMS_ENVIRONMENT}`
   }
 
   if (preview) {
-    endpoint += `/preview`;
+    endpoint += `/preview`
   }
 
   const { body } = await tiny.post({
@@ -21,12 +22,14 @@ export async function request({ query, variables, preview }) {
       query,
       variables,
     },
-  });
+  })
+
+  console.log("Loaded Body", body)
 
   if (body.errors) {
-    console.error("Ouch! The query has some errors!");
-    throw body.errors;
+    console.error("Ouch! The query has some errors!")
+    throw body.errors
   }
 
-  return body.data;
+  return body.data
 }

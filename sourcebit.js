@@ -6,8 +6,8 @@ module.exports = {
     {
       module: require("sourcebit-source-filesystem"),
       options: {
-        watch: isDev
-      }
+        watch: isDev,
+      },
     },
     // flatten all frontmatter and markdown data
     ({ data }) => {
@@ -16,7 +16,7 @@ module.exports = {
           return {
             __metadata: object.__metadata,
             ...object.frontmatter,
-            markdown_content: object.markdown || null
+            markdown_content: object.markdown || null,
           }
         }
         return object
@@ -24,7 +24,7 @@ module.exports = {
 
       return {
         ...data,
-        objects
+        objects,
       }
     },
     {
@@ -33,20 +33,50 @@ module.exports = {
         liveUpdate: isDev,
         flattenAssetUrls: true,
         pages: [
-          { path: "/{__metadata.urlPath}", predicate: _.matchesProperty("__metadata.modelName", "advanced") },
-          { path: "/{__metadata.urlPath}", predicate: _.matchesProperty("__metadata.modelName", "blog") },
-          { path: "/{__metadata.urlPath}", predicate: _.matchesProperty("__metadata.modelName", "portfolio") },
-          { path: "/{__metadata.urlPath}", predicate: _.matchesProperty("__metadata.modelName", "page") },
-          { path: "/{__metadata.urlPath}", predicate: _.matchesProperty("__metadata.modelName", "post") },
-          { path: "/{__metadata.urlPath}", predicate: _.matchesProperty("__metadata.modelName", "project") }
+          {
+            path: "/{__metadata.urlPath}",
+            predicate: _.matchesProperty("__metadata.modelName", "advanced"),
+          },
+          {
+            path: "/{__metadata.urlPath}",
+            predicate: _.matchesProperty("__metadata.modelName", "blog"),
+          },
+          {
+            path: "/{__metadata.urlPath}",
+            predicate: _.matchesProperty("__metadata.modelName", "portfolio"),
+          },
+          {
+            path: "/{__metadata.urlPath}",
+            predicate: _.matchesProperty("__metadata.modelName", "page"),
+          },
+          {
+            path: "/{__metadata.urlPath}",
+            predicate: _.matchesProperty("__metadata.modelName", "post"),
+          },
+          {
+            path: "/{__metadata.urlPath}",
+            predicate: _.matchesProperty("__metadata.modelName", "project"),
+          },
         ],
         commonProps: {
-          pages: { predicate: _.matchesProperty("__metadata.modelType", "page") },
-          posts: { predicate: _.matchesProperty("__metadata.modelName", "post") },
-          projects: { predicate: _.matchesProperty("__metadata.modelName", "project") },
-          data: { single: true, predicate: _.matchesProperty("__metadata.id", "sourcebit-source-filesystem:data") }
-        }
-      }
-    }
-  ]
+          pages: {
+            predicate: _.matchesProperty("__metadata.modelType", "page"),
+          },
+          posts: {
+            predicate: _.matchesProperty("__metadata.modelName", "post"),
+          },
+          projects: {
+            predicate: _.matchesProperty("__metadata.modelName", "project"),
+          },
+          data: {
+            single: true,
+            predicate: _.matchesProperty(
+              "__metadata.id",
+              "sourcebit-source-filesystem:data"
+            ),
+          },
+        },
+      },
+    },
+  ],
 }

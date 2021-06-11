@@ -8,44 +8,11 @@ import Intro from "../components/intro"
 import Layout from "../components/layout"
 import MoreStories from "../components/more-stories"
 import { request } from "../lib/datocms"
-import { metaTagsFragment, responsiveImageFragment } from "../lib/fragments"
+import { homepage } from "@lib/queries"
 
 export async function getStaticProps({ preview }) {
   const graphqlRequest = {
-    query: `
-      {
-        site: _site {
-          favicon: faviconMetaTags {
-            ...metaTagsFragment
-          }
-        }
-        homepage {
-          seo: _seoMetaTags {
-            ...metaTagsFragment
-          }
-        }
-        allPosts(orderBy: date_DESC, first: 20) {
-          title
-          slug
-          excerpt
-          date
-          coverImage {
-            responsiveImage(imgixParams: {fm: jpg, fit: crop, w: 2000, h: 1000 }) {
-              ...responsiveImageFragment
-            }
-          }
-          author {
-            name
-            picture {
-              url(imgixParams: {fm: jpg, fit: crop, w: 100, h: 100, sat: -100})
-            }
-          }
-        }
-      }
-
-      ${metaTagsFragment}
-      ${responsiveImageFragment}
-    `,
+    query: homepage,
     preview,
     variables: {},
   }
