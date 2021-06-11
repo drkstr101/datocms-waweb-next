@@ -4,7 +4,16 @@ import { Image } from "react-datocms"
 import cn from "classnames"
 import Link from "next/link"
 
-export default function CoverImage({ title, responsiveImage, slug }) {
+export type CoverImageProps = {
+  title: string
+  responsiveImage: any
+  slug?: "string" | null
+}
+export default function CoverImage({
+  title,
+  responsiveImage,
+  slug = null,
+}: CoverImageProps) {
   const image = (
     <Image
       data={{
