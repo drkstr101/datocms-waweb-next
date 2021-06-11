@@ -1,29 +1,50 @@
-import Container from "./container"
+/**
+ * /*eslint-disable
+ *
+ * @format
+ */
 
-export default function Footer() {
+import React from "react"
+
+// reactstrap components
+import { Container, Row } from "reactstrap"
+
+// core components
+
+function FooterBlack() {
   return (
-    <footer className="bg-accent-1 border-t border-accent-2">
-      <Container>
-        <div className="py-28 flex flex-col lg:flex-row items-center">
-          <h3 className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-            Statically Generated with Next.js.
-          </h3>
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
-            <a
-              href="https://www.datocms.com/docs/next-js"
-              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
-            >
-              Read Documentation
-            </a>
-            <a
-              href="https://github.com/datocms/nextjs-demo"
-              className="mx-3 font-bold hover:underline"
-            >
-              View on GitHub
-            </a>
-          </div>
-        </div>
-      </Container>
-    </footer>
+    <>
+      <footer className="footer footer-white">
+        <Container>
+          <Row>
+            <nav className="footer-nav">
+              <ul>
+                <li>
+                  <a href="/home" className="mr-1">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="/blog" className="mr-1">
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="/support">Support</a>
+                </li>
+              </ul>
+            </nav>
+            <div className="credits ml-auto">
+              <span className="copyright">
+                © {new Date().getFullYear()}
+                Watheia Labs, LLC.
+              </span>
+            </div>
+          </Row>
+        </Container>
+      </footer>
+    </>
   )
 }
+
+export default FooterBlack

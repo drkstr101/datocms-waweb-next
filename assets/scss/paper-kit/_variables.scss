@@ -1,12 +1,12 @@
 /** @format */
 @font-face {
   font-family: "Adobe Clean Serif";
-  src: url("~theme/fonts/subset-AdobeCleanSerif-BoldIt.eot");
+  src: url("~assets/fonts/subset-AdobeCleanSerif-BoldIt.eot");
   src: local("Adobe Clean Serif Bold Italic"), local("AdobeCleanSerif-BoldIt"),
-    url("~theme/fonts/subset-AdobeCleanSerif-BoldIt.eot?#iefix")
+    url("~assets/fonts/subset-AdobeCleanSerif-BoldIt.eot?#iefix")
       format("embedded-opentype"),
-    url("~theme/fonts/subset-AdobeCleanSerif-BoldIt.woff2") format("woff2"),
-    url("~theme/fonts/subset-AdobeCleanSerif-BoldIt.woff") format("woff");
+    url("~assets/fonts/subset-AdobeCleanSerif-BoldIt.woff2") format("woff2"),
+    url("~assets/fonts/subset-AdobeCleanSerif-BoldIt.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -14,12 +14,12 @@
 
 @font-face {
   font-family: "Adobe Clean";
-  src: url("~theme/fonts/subset-AdobeClean-Light.eot");
+  src: url("~assets/fonts/subset-AdobeClean-Light.eot");
   src: local("Adobe Clean Light"), local("AdobeClean-Light"),
-    url("~theme/fonts/subset-AdobeClean-Light.eot?#iefix")
+    url("~assets/fonts/subset-AdobeClean-Light.eot?#iefix")
       format("embedded-opentype"),
-    url("~theme/fonts/subset-AdobeClean-Light.woff2") format("woff2"),
-    url("~theme/fonts/subset-AdobeClean-Light.woff") format("woff");
+    url("~assets/fonts/subset-AdobeClean-Light.woff2") format("woff2"),
+    url("~assets/fonts/subset-AdobeClean-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -27,12 +27,12 @@
 
 @font-face {
   font-family: "Adobe Clean Serif";
-  src: url("~theme/fonts/subset-AdobeCleanSerif-Bold.eot");
+  src: url("~assets/fonts/subset-AdobeCleanSerif-Bold.eot");
   src: local("Adobe Clean Serif Bold"), local("AdobeCleanSerif-Bold"),
-    url("~theme/fonts/subset-AdobeCleanSerif-Bold.eot?#iefix")
+    url("~assets/fonts/subset-AdobeCleanSerif-Bold.eot?#iefix")
       format("embedded-opentype"),
-    url("~theme/fonts/subset-AdobeCleanSerif-Bold.woff2") format("woff2"),
-    url("~theme/fonts/subset-AdobeCleanSerif-Bold.woff") format("woff");
+    url("~assets/fonts/subset-AdobeCleanSerif-Bold.woff2") format("woff2"),
+    url("~assets/fonts/subset-AdobeCleanSerif-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -40,12 +40,12 @@
 
 @font-face {
   font-family: "Adobe Clean";
-  src: url("~theme/fonts/subset-AdobeClean-LightIt.eot");
+  src: url("~assets/fonts/subset-AdobeClean-LightIt.eot");
   src: local("Adobe Clean Light Italic"), local("AdobeClean-LightIt"),
-    url("~theme/fonts/subset-AdobeClean-LightIt.eot?#iefix")
+    url("~assets/fonts/subset-AdobeClean-LightIt.eot?#iefix")
       format("embedded-opentype"),
-    url("~theme/fonts/subset-AdobeClean-LightIt.woff2") format("woff2"),
-    url("~theme/fonts/subset-AdobeClean-LightIt.woff") format("woff");
+    url("~assets/fonts/subset-AdobeClean-LightIt.woff2") format("woff2"),
+    url("~assets/fonts/subset-AdobeClean-LightIt.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -53,12 +53,12 @@
 
 @font-face {
   font-family: "Adobe Clean Serif";
-  src: url("~theme/fonts/subset-AdobeCleanSerif-It.eot");
+  src: url("~assets/fonts/subset-AdobeCleanSerif-It.eot");
   src: local("Adobe Clean Serif Italic"), local("AdobeCleanSerif-It"),
-    url("~theme/fonts/subset-AdobeCleanSerif-It.eot?#iefix")
+    url("~assets/fonts/subset-AdobeCleanSerif-It.eot?#iefix")
       format("embedded-opentype"),
-    url("~theme/fonts/subset-AdobeCleanSerif-It.woff2") format("woff2"),
-    url("~theme/fonts/subset-AdobeCleanSerif-It.woff") format("woff");
+    url("~assets/fonts/subset-AdobeCleanSerif-It.woff2") format("woff2"),
+    url("~assets/fonts/subset-AdobeCleanSerif-It.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -66,12 +66,12 @@
 
 @font-face {
   font-family: "Adobe Clean";
-  src: url("~theme/fonts/subset-AdobeClean-Black.eot");
+  src: url("~assets/fonts/subset-AdobeClean-Black.eot");
   src: local("Adobe Clean Black"), local("AdobeClean-Black"),
-    url("~theme/fonts/subset-AdobeClean-Black.eot?#iefix")
+    url("~assets/fonts/subset-AdobeClean-Black.eot?#iefix")
       format("embedded-opentype"),
-    url("~theme/fonts/subset-AdobeClean-Black.woff2") format("woff2"),
-    url("~theme/fonts/subset-AdobeClean-Black.woff") format("woff");
+    url("~assets/fonts/subset-AdobeClean-Black.woff2") format("woff2"),
+    url("~assets/fonts/subset-AdobeClean-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -79,12 +79,12 @@
 
 @font-face {
   font-family: "Adobe Clean Serif";
-  src: url("~theme/fonts/subset-AdobeCleanSerif-Regular.eot");
+  src: url("~assets/fonts/subset-AdobeCleanSerif-Regular.eot");
   src: local("Adobe Clean Serif"), local("AdobeCleanSerif-Regular"),
-    url("~theme/fonts/subset-AdobeCleanSerif-Regular.eot?#iefix")
+    url("~assets/fonts/subset-AdobeCleanSerif-Regular.eot?#iefix")
       format("embedded-opentype"),
-    url("~theme/fonts/subset-AdobeCleanSerif-Regular.woff2") format("woff2"),
-    url("~theme/fonts/subset-AdobeCleanSerif-Regular.woff") format("woff");
+    url("~assets/fonts/subset-AdobeCleanSerif-Regular.woff2") format("woff2"),
+    url("~assets/fonts/subset-AdobeCleanSerif-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

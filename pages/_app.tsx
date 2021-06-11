@@ -17,10 +17,10 @@
  */
 
 import { SSRProvider, OverlayProvider } from "react-aria"
-import "@theme/scss/main.scss"
-import "@theme/nprogress.css"
-import "@theme/chrome-bug.css"
-import "@theme/index.css"
+import "../assets/scss/main.scss"
+import "../assets/nprogress.css"
+import "../assets/chrome-bug.css"
+import "../assets/index.css"
 import type { AppProps } from "next/app"
 import NProgress from "@components/nprogress"
 import ResizeHandler from "@components/resize-handler"
